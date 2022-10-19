@@ -35,7 +35,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: calc(100% - 250px);
+  width: calc(100% - 300px);
   background: var(--top-bar);
   height: 100px;
   justify-content: flex-end;
@@ -52,11 +52,15 @@ body {
   margin-right: 1.3rem;
 }
 
+.upgrade-btn:hover {
+  transform: scale(1.1);
+}
+
 /*************************************************
     MAIN CONTENT STYLES
  *************************************************/
 .main-container {
-  width: calc(100vw - 250px);
+  width: calc(100vw - 300px);
   background-color: var(--body-clr);
   overflow-y: scroll;
   height: 100vh;
@@ -67,7 +71,7 @@ body {
     SIDEBAR NAV STYLES
  *************************************************/
 .side-nav {
-  width: 250px;
+  width: 300px;
   height: 100vh;
   background-color: var(--sidebar-clr);
 }
@@ -82,4 +86,173 @@ body {
   right: 0;
   height: 100px;
   background-color: var(--player-clr);
+}
+
+/*************************************************
+    LEFT PLAYER CONTROLS STYLES
+ *************************************************/
+.lft-content {
+  width: 30%;
+}
+
+.preview>* {
+  flex: 0 0 70px;
+  min-width: 70px;
+}
+
+.preview {
+  padding: 1rem;
+  width: 20%;
+}
+
+.song {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.song-name a {
+  color: var(--title-clr);
+  font-weight: 600;
+  font-size: .95rem;
+  text-decoration: none;
+}
+
+.song-author a {
+  color: var(--subtitle-clr);
+  font-weight: 600;
+  font-size: .75rem;
+  text-decoration: none;
+}
+
+.lft-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.lft-icons a {
+  color: var(--subtitle-clr);
+}
+
+/*************************************************
+    MIDDLE PLAYER CONTROLS STYLES
+ *************************************************/
+.mid-content {
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-row {
+  gap: 2rem;
+  color: var(--title-clr);
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+.top-row span:nth-child(3) {
+  font-size: 2.5rem;
+  padding: 0 10px;
+}
+
+.top-row span a {
+  color: var(--title-clr);
+}
+
+.btm-row span {
+  color: var(--title-clr);
+  font-size: .9rem;
+}
+
+.song-duration {
+  width: 60vh;
+  margin: 1rem;
+  height: 5px;
+  border-radius: 3rem;
+  background-color: var(--subtitle-clr);
+  position: relative;
+}
+
+.listened-amount:hover+.dot {
+  display: block;
+}
+
+.listened-amount:hover {
+  background-color: var(--accent-clr);
+}
+
+.listened-amount {
+  width: 10vh;
+  height: 5px;
+  border-radius: 3rem;
+  background-color: var(--title-clr);
+  position: relative;
+}
+
+.btm-row {
+  align-items: center;
+}
+
+.dot {
+  display: none;
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  left: 9vh;
+  width: 18px;
+  height: 18px;
+  background-color: var(--title-clr);
+  border-radius: 50%;
+}
+
+/*************************************************
+    RIGHT PLAYER CONTROLS STYLES
+ *************************************************/
+.rght-content {
+  width: 30%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.vol-lvl {
+  width: 6vh;
+  height: 5px;
+  border-radius: 3rem;
+  background-color: var(--title-clr);
+  position: relative;
+}
+
+.volume-level {
+  width: 20vh;
+  margin: 1rem;
+  height: 5px;
+  border-radius: 3rem;
+  background-color: var(--subtitle-clr);
+  position: relative;
+}
+
+.vol-lvl:hover+.dot {
+  display: block;
+}
+
+.vol-lvl:hover {
+  background-color: var(--accent-clr);
+}
+
+.rght-icons {
+  display: flex;
+  color: var(--title-clr);
+  gap: 1rem;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.rght-icons a {
+  color: var(--title-clr);
+}
+
+.dot-vlm {
+  left: 4vh;
 }
