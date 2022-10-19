@@ -86,27 +86,23 @@ body {
   right: 0;
   height: 100px;
   background-color: var(--player-clr);
+  justify-content: space-between;
 }
 
 /*************************************************
     LEFT PLAYER CONTROLS STYLES
  *************************************************/
-.lft-content {
-  width: 30%;
-}
-
-.preview>* {
-  flex: 0 0 70px;
-  min-width: 70px;
-}
-
 .preview {
   padding: 1rem;
-  width: 20%;
+}
+
+.lft-content {
+  min-width: 25%;
 }
 
 .song {
   flex-direction: column;
+  padding-right: 50px;
   justify-content: center;
 }
 
@@ -126,39 +122,53 @@ body {
 
 .lft-icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  padding-left: 50px;
 }
 
 .lft-icons a {
   color: var(--subtitle-clr);
 }
 
+.fa-heart:hover {
+  color: var(--title-clr);
+}
+
+.fa-folder:hover {
+  color: var(--title-clr);
+}
+
 /*************************************************
     MIDDLE PLAYER CONTROLS STYLES
  *************************************************/
 .mid-content {
-  width: 40%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-width: 50%;
 }
 
 .top-row {
+  padding-top: .5rem;
   gap: 2rem;
   color: var(--title-clr);
   font-size: 1.3rem;
   align-items: center;
+  justify-content: center;
 }
 
-.top-row span:nth-child(3) {
+.top-row>li:nth-child(3) {
   font-size: 2.5rem;
   padding: 0 10px;
 }
 
-.top-row span a {
+.top-row li a {
+  list-style-type: none;
   color: var(--title-clr);
+}
+
+.top-row li {
+  list-style-type: none;
 }
 
 .btm-row span {
@@ -211,9 +221,9 @@ body {
     RIGHT PLAYER CONTROLS STYLES
  *************************************************/
 .rght-content {
-  width: 30%;
   align-items: center;
   justify-content: flex-end;
+  min-width: 25%;
 }
 
 .vol-lvl {
