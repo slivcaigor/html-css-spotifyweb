@@ -155,6 +155,7 @@ body {
   color: var(--title-clr);
   padding: 7px 0;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .cards span {
@@ -179,9 +180,35 @@ body {
 
 .artist img {
   border-radius: 50%;
+  cursor: pointer;
 }
 
+.crd-hover {
+  position: relative;
+  cursor: pointer;
+}
 
+.crd-hover:hover .play {
+  display: block;
+}
+
+.crd-hover:hover img {
+  filter: brightness(50%);
+}
+
+.play {
+  display: none;
+  position: absolute;
+  z-index: 111;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play i {
+  color: var(--title-clr);
+  font-size: 50px;
+}
 
 /*************************************************
     SIDEBAR NAV STYLES
