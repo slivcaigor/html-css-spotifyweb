@@ -651,3 +651,91 @@ body {
     padding-top: 20px;
   }
 }
+
+@media all and (max-width: 480px) {
+  .sidebar-mid {
+    display: none;
+  }
+
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 25px;
+    margin-left: -10px;
+  }
+
+  .nav a {
+    display: none;
+  }
+
+  .side-nav {
+    width: 50px;
+  }
+
+  .main-container {
+    width: calc(100% - 50px);
+  }
+
+  .recently-played h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .center-nav a {
+    padding: 0 7px;
+    font-size: .75rem;
+  }
+
+  .top-bar {
+    width: calc(100% - 50px);
+  }
+
+  .upgrade-btn {
+    padding: 5px 15px;
+    border-radius: 3rem;
+    margin-right: 130px;
+    font-size: 15px;
+  }
+
+  .cards {
+    flex: 0 0 11em;
+  }
+
+  .lft-content img {
+    display: none
+  }
+
+  .song {
+    padding-left: 10px;
+  }
+
+  .lft-icons i {
+    padding: 0px 3px;
+  }
+
+  .song-author {
+    font-size: 10px;
+  }
+
+  .mid-content {
+    width: 60%;
+  }
+
+  .created-for h1 {
+    font-size: 20px;
+  }
+
+  .created-for {
+    text-align: center;
+  }
+
+  .card-img {
+    padding-top: 20px;
+  }
+}
