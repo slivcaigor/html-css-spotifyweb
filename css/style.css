@@ -84,26 +84,47 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
   background-color: var(--player-clr);
-  justify-content: space-between;
+}
+
+.lft-content {
+  display: flex;
+  align-items: center;
+  min-width: 25%;
+}
+
+.mid-content {
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rght-content {
+  min-width: 25%;
+  display: flex;
+  align-items: center;
 }
 
 /*************************************************
     LEFT PLAYER CONTROLS STYLES
  *************************************************/
-.preview {
-  padding: 1rem;
+.lft-content {
+  max-width: 25%;
 }
 
-.lft-content {
-  min-width: 25%;
+.preview {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
 }
 
 .song {
-  flex-direction: column;
-  padding-right: 50px;
-  justify-content: center;
+  display: inline-block;
+  padding-right: 20px;
 }
 
 .song-name a {
@@ -120,11 +141,9 @@ body {
   text-decoration: none;
 }
 
-.lft-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
+.lft-icons i {
+  display: inline-block;
+  padding: 0px 10px;
 }
 
 .lft-icons a {
@@ -142,46 +161,56 @@ body {
 /*************************************************
     MIDDLE PLAYER CONTROLS STYLES
  *************************************************/
-.mid-content {
-  flex-direction: column;
-  align-items: center;
-  min-width: 50%;
+.control {
+  width: 100%;
+  text-align: center;
 }
 
 .top-row {
-  padding-top: .5rem;
-  gap: 2rem;
+  padding-bottom: 5px;
+}
+
+.top-row i {
   color: var(--title-clr);
   font-size: 1.3rem;
-  align-items: center;
-  justify-content: center;
+  vertical-align: middle;
 }
 
-.top-row>li:nth-child(3) {
+.top-row .fa-circle-play {
   font-size: 2.5rem;
-  padding: 0 10px;
 }
 
-.top-row li a {
-  list-style-type: none;
+.top-row span {
+  padding: 0px 10px;
   color: var(--title-clr);
 }
 
-.top-row li {
-  list-style-type: none;
+.fa-play-circle {
+  font-size: 22px;
+  padding: 0px 5px;
 }
 
-.btm-row span {
-  color: var(--title-clr);
+.bottom-row span {
   font-size: .9rem;
+  color: var(--title-clr);
+  padding: 0 3px;
 }
 
 .song-duration {
-  width: 60vh;
-  margin: 1rem;
   height: 5px;
+  width: 60%;
   border-radius: 3rem;
   background-color: var(--subtitle-clr);
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.listened-amount {
+  width: 20%;
+  height: 5px;
+  border-radius: 3rem;
+  background-color: var(--title-clr);
   position: relative;
 }
 
@@ -193,53 +222,51 @@ body {
   background-color: var(--accent-clr);
 }
 
-.listened-amount {
-  width: 10vh;
-  height: 5px;
-  border-radius: 3rem;
-  background-color: var(--title-clr);
-  position: relative;
-}
-
-.btm-row {
-  align-items: center;
-}
-
 .dot {
   display: none;
   position: absolute;
   top: -5px;
-  bottom: 0;
-  left: 9vh;
-  width: 18px;
-  height: 18px;
+  bottom: 0px;
+  left: 18%;
+  width: 16px;
+  height: 16px;
   background-color: var(--title-clr);
   border-radius: 50%;
 }
 
+
 /*************************************************
     RIGHT PLAYER CONTROLS STYLES
  *************************************************/
-.rght-content {
-  align-items: center;
-  justify-content: flex-end;
-  min-width: 25%;
+.rght-content i {
+  font-size: 15px;
+  padding: 0px 3px;
 }
 
-.vol-lvl {
-  width: 6vh;
-  height: 5px;
-  border-radius: 3rem;
-  background-color: var(--title-clr);
-  position: relative;
+.rght-icons a {
+  color: var(--title-clr);
+}
+
+.rght-icons {
+  width: 100%;
+  text-align: center;
 }
 
 .volume-level {
-  width: 20vh;
-  margin: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
   height: 5px;
   border-radius: 3rem;
   background-color: var(--subtitle-clr);
+  position: relative;
+}
+
+.vol-lvl {
+  width: 30%;
+  height: 5px;
+  border-radius: 3rem;
+  background-color: var(--title-clr);
   position: relative;
 }
 
@@ -251,18 +278,6 @@ body {
   background-color: var(--accent-clr);
 }
 
-.rght-icons {
-  display: flex;
-  color: var(--title-clr);
-  gap: 1rem;
-  align-items: center;
-  padding-left: 50px;
-}
-
-.rght-icons a {
-  color: var(--title-clr);
-}
-
-.dot-vlm {
-  left: 4vh;
+.dot-lvl {
+  left: 25%;
 }

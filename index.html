@@ -39,9 +39,11 @@
   <section>
     <div class="player-controls flexed">
       <!-- Left Player Controls -->
-      <div class="lft-content flexed">
-        <img class="preview flexed" src="./img/sinister.jpeg" alt="Playing Song Preview Cover">
-        <div class="song flexed">
+      <div class="lft-content">
+        <div class="song-cover">
+          <img class="preview" src="./img/sinister.jpeg" alt="Playing Song Preview Cover">
+        </div>
+        <div class="song">
           <div class="song-name">
             <a href="#">Sinister</a>
           </div>
@@ -54,16 +56,17 @@
           <a href="#"><i class="fa-regular fa-folder"></i></a>
         </div>
       </div>
+
       <!-- Middle Player Controls -->
-      <div class="mid-content flexed">
-        <ul class="top-row flexed">
-          <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
-          <li><a href="#"><i class="fa-regular fa-circle-play"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-rotate-right"></i></a></li>
-        </ul>
-        <div class="btm-row flexed">
+      <div class="mid-content">
+        <div class="top-row control">
+          <span><a href="#"><i class="fa-solid fa-shuffle"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-backward-step"></i></a></span>
+          <span><a href="#"><i class="fa-regular fa-circle-play"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-forward-step"></i></a></span>
+          <span><a href="#"><i class="fa-solid fa-rotate-right"></i></a></span>
+        </div>
+        <div class="bottom-row control">
           <span>0:25</span>
           <div class="song-duration">
             <div class="listened-amount"></div>
@@ -72,17 +75,17 @@
           <span>4:35</span>
         </div>
       </div>
+
       <!-- Right Player Controls -->
-      <div class="rght-content flexed">
+      <div class="rght-content">
         <div class="rght-icons">
           <span><a href="#"><i class="fa-solid fa-list"></i></a></span>
           <span><a href="#"><i class="fa-solid fa-display"></i></a></span>
           <span><a href="#"><i class="fa-solid fa-volume-high"></i></a></span>
-        </div>
-        <div class="volume-level">
-          <div class="vol-lvl">
+          <div class="volume-level volume-bar">
+            <div class="vol-lvl"></div>
+            <div class="dot dot-lvl"></div>
           </div>
-          <div class="dot dot-vlm"></div>
         </div>
       </div>
     </div>
