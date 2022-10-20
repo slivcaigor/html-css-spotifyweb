@@ -153,7 +153,7 @@ body {
 
 .cards {
   text-align: center;
-  flex: 0 0 16.35em;
+  flex: 0 3 16.35em;
 }
 
 .cards h3 {
@@ -223,6 +223,10 @@ body {
   height: calc(100vh - 100px);
   background-color: var(--sidebar-clr);
   flex-direction: column;
+}
+
+.mobile {
+  display: none;
 }
 
 #logo {
@@ -572,6 +576,34 @@ body {
 /*************************************************
     RESPONSIVE
  *************************************************/
+@media all and (max-width: 1800px) {
+  .cards {
+    flex: 0 1 15.4em;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .cards {
+    flex: 0 1 14.1em;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .cards {
+    flex: 0 1 12.8em;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .cards {
+    flex: 0 1 25em;
+  }
+
+  .song {
+    padding-right: 0;
+  }
+}
+
 @media all and (max-width: 480px) {
   .sidebar-mid {
     display: none;
@@ -617,14 +649,11 @@ body {
   }
 
   .upgrade-btn {
-    padding: 5px 15px;
-    border-radius: 3rem;
     margin-right: 130px;
-    font-size: 15px;
   }
 
   .cards {
-    flex: 0 0 11em;
+    flex: 0 1 22em;
   }
 
   .lft-content img {
@@ -658,6 +687,13 @@ body {
   .card-img {
     padding-top: 20px;
   }
+
+  .upgrade-btn {
+    padding: 5px 15px;
+    border-radius: 3rem;
+    margin-right: 40px;
+    font-size: 15px;
+  }
 }
 
 @media all and (max-width: 320px) {
@@ -667,6 +703,13 @@ body {
 
   .sidebar-bottom {
     display: none;
+  }
+
+  .upgrade-btn {
+    padding: 5px 15px;
+    border-radius: 3rem;
+    margin-right: 40px;
+    font-size: 15px;
   }
 
   .desktop {
@@ -704,15 +747,8 @@ body {
     width: calc(100% - 50px);
   }
 
-  .upgrade-btn {
-    padding: 5px 15px;
-    border-radius: 3rem;
-    margin-right: 32px;
-    font-size: 15px;
-  }
-
   .cards {
-    flex: 0 0 12em;
+    flex: 0 0 13em;
   }
 
   .lft-content {
