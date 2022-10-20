@@ -64,7 +64,39 @@ body {
   background-color: var(--body-clr);
   overflow-y: scroll;
   height: 100vh;
+}
 
+.center-nav {
+  padding-top: 120px;
+  text-align: center;
+}
+
+.center-nav ul li:first-child {
+  position: relative;
+}
+
+.center-nav ul li:before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: -3px;
+  width: 50%;
+  border-bottom: 2px solid var(--accent-clr);
+}
+
+.center-nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 3px 0;
+}
+
+.center-nav a {
+  color: var(--subtitle-clr);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: .85rem;
 }
 
 /*************************************************
