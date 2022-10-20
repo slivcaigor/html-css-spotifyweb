@@ -59,6 +59,7 @@ body {
   border: 1px solid white;
   border-radius: 3rem;
   align-self: center;
+  font-size: 16px;
   margin-right: 1.3rem;
 }
 
@@ -85,8 +86,6 @@ body {
   color: var(--title-clr);
 }
 
-
-
 .center-nav ul li:first-child {
   position: relative;
 }
@@ -95,7 +94,7 @@ body {
   content: "";
   position: absolute;
   left: 25%;
-  bottom: -3px;
+  bottom: 0px;
   width: 50%;
   border-bottom: 2px solid var(--accent-clr);
 }
@@ -568,4 +567,87 @@ body {
 
 .dot-lvl {
   left: 25%;
+}
+
+/*************************************************
+    RESPONSIVE
+ *************************************************/
+@media all and (max-width: 320px) {
+  .sidebar-mid {
+    display: none;
+  }
+
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    width: 25px;
+    margin-left: -10px;
+  }
+
+  .nav a {
+    display: none;
+  }
+
+  .side-nav {
+    width: 50px;
+  }
+
+  .main-container {
+    width: calc(100% - 50px);
+  }
+
+  .recently-played h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .center-nav a {
+    padding: 0 7px;
+    font-size: .75rem;
+  }
+
+  .top-bar {
+    width: calc(100% - 50px);
+  }
+
+  .upgrade-btn {
+    padding: 5px 15px;
+    border-radius: 3rem;
+    margin-right: 32px;
+    font-size: 15px;
+  }
+
+  .cards {
+    flex: 0 0 12em;
+  }
+
+  .lft-content {
+    display: none;
+  }
+
+  .rght-content {
+    display: none;
+  }
+
+  .mid-content {
+    width: 100%;
+  }
+
+  .created-for h1 {
+    font-size: 20px;
+  }
+
+  .created-for {
+    text-align: center;
+  }
+
+  .card-img {
+    padding-top: 20px;
+  }
 }
