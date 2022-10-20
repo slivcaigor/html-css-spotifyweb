@@ -81,6 +81,12 @@ body {
   text-align: center;
 }
 
+.center-nav a:hover {
+  color: var(--title-clr);
+}
+
+
+
 .center-nav ul li:first-child {
   position: relative;
 }
@@ -215,9 +221,144 @@ body {
  *************************************************/
 .side-nav {
   width: 200px;
-  height: 100vh;
+  height: calc(100vh - 100px);
   background-color: var(--sidebar-clr);
+  flex-direction: column;
 }
+
+#logo {
+  width: 100%;
+  padding: 1.3rem;
+}
+
+.nav img {
+  width: 20px;
+  padding-right: 3px;
+  vertical-align: middle;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--subtitle-clr);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: var(--title-clr);
+}
+
+.nav li:nth-child(2),
+.nav li:nth-child(3) {
+  padding-left: 15px;
+}
+
+.nav ul li:first-child {
+  border-left: 2px solid var(--accent-clr);
+  padding-left: 15px;
+}
+
+.playlist h2 {
+  text-transform: uppercase;
+  color: var(--title-clr);
+  padding: 15px;
+  font-size: 15px;
+}
+
+.add-song span {
+  color: var(--sidebar-clr);
+  font-size: 20px;
+  background-color: var(--subtitle-clr);
+  padding: 10px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.add-song h4 {
+  color: var(--subtitle-clr);
+  padding: 9px 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.add-song h4:hover {
+  color: var(--title-clr);
+}
+
+.add-song {
+  align-items: center;
+}
+
+.song-list li {
+  list-style-type: none;
+  color: var(--subtitle-clr);
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 7px;
+}
+
+.song-list li:hover {
+  color: var(--title-clr);
+}
+
+.song-list {
+  padding: 15px;
+  overflow: scroll;
+}
+
+.profile-settings img {
+  width: 15%;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.profile-settings span {
+  color: var(--subtitle-clr);
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.profile {
+  margin-top: 10px;
+}
+
+.download {
+  margin-bottom: 10px;
+}
+
+.download span:hover {
+  color: var(--title-clr);
+}
+
+.profile span {
+  color: var(--title-clr);
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.profile img {
+  color: var(--title-clr);
+  width: 20px;
+  height: 20px;
+  background-color: var(--subtitle-clr);
+  border-radius: 50%;
+}
+
+.profile-settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sidebar-mid {
+  flex: 1 1 auto;
+  overflow: scroll;
+}
+
+.sidebar-bottom {
+  padding: 25px;
+}
+
 
 /*************************************************
     PLAYER CONTROLS STYLES
@@ -281,6 +422,11 @@ body {
   font-weight: 600;
   font-size: .75rem;
   text-decoration: none;
+}
+
+.song-author a:hover {
+  color: var(--title-clr);
+  text-decoration: underline;
 }
 
 .lft-icons i {
