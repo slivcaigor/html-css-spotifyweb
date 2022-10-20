@@ -592,6 +592,10 @@ body {
   .cards {
     flex: 0 1 12.8em;
   }
+
+  .song {
+    padding-right: 0px;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -600,8 +604,14 @@ body {
   }
 
   .song {
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 0px;
   }
+
+  .preview {
+    display: none;
+  }
+
 }
 
 @media all and (max-width: 480px) {
@@ -686,6 +696,57 @@ body {
 
   .card-img {
     padding-top: 20px;
+  }
+
+  .upgrade-btn {
+    padding: 5px 15px;
+    border-radius: 3rem;
+    margin-right: 110px;
+    font-size: 15px;
+  }
+
+  .mid-content {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .top-row i {
+    font-size: 15px;
+  }
+
+  .top-row .fa-circle-play {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 391px) {
+  .bottom-row span {
+    font-size: 10px;
+  }
+
+  .top-row i {
+    font-size: 10px;
+  }
+
+  .rght-icons i {
+    font-size: 10px;
+  }
+
+  .lft-content {
+    font-size: 10px;
+  }
+
+  .song-name a {
+    font-size: 10px;
+  }
+
+  .song-author a {
+    font-size: 10px;
+  }
+
+  .top-row .fa-circle-play {
+    font-size: 14px;
   }
 
   .upgrade-btn {
