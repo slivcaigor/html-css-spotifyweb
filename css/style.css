@@ -148,7 +148,7 @@ body {
 
 .cards {
   text-align: center;
-  flex: 1 0 16em;
+  flex: 0 0 16.35em;
 }
 
 .cards h3 {
@@ -161,6 +161,26 @@ body {
   color: var(--subtitle-clr);
   font-size: 13px;
 }
+
+.created-for h1 {
+  color: var(--title-clr);
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+.created-for span {
+  color: var(--subtitle-clr);
+  font-size: 13px;
+}
+
+.created-for {
+  padding: 2rem;
+}
+
+.artist img {
+  border-radius: 50%;
+}
+
 
 
 /*************************************************
