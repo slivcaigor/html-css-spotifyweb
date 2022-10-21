@@ -41,6 +41,36 @@ li {
   list-style-type: none;
 }
 
+
+/*************************************************
+    SCROLLBAR HIDDEN ON DIFFERENT BROWSERS
+ *************************************************/
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar-mid::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar-mid {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.song-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.song-list {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 /*************************************************
     AUTUMN ANIMATION STYLES
  *************************************************/
@@ -68,11 +98,11 @@ li {
   }
 
   70% {
-    transform: translateY(172vh) scale(1);
+    transform: translateY(160vh) scale(1);
   }
 
   100% {
-    transform: translateY(172vh) scale(0);
+    transform: translateY(160vh) scale(0);
   }
 }
 
