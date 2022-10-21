@@ -68,11 +68,11 @@ li {
   }
 
   70% {
-    transform: translateY(calc(170vh - 130px)) scale(1);
+    transform: translateY(172vh) scale(1);
   }
 
   100% {
-    transform: translateY(calc(170vh - 130px)) scale(0);
+    transform: translateY(172vh) scale(0);
   }
 }
 
@@ -237,6 +237,10 @@ li {
   display: block;
 }
 
+.crd-hover:hover .show-more {
+  display: block;
+}
+
 .crd-hover:hover img {
   filter: brightness(50%);
 }
@@ -253,6 +257,18 @@ li {
 .play i {
   color: var(--title-clr);
   font-size: 50px;
+}
+
+.show-more {
+  display: none;
+  position: absolute;
+  color: var(--title-clr);
+  font-size: 1.5rem;
+  font-weight: 600;
+  z-index: 111;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*************************************************
@@ -298,7 +314,7 @@ li {
 
 .nav ul li:first-child {
   border-left: 2px solid var(--accent-clr);
-  padding-left: 15px;
+  padding-left: 13px;
 }
 
 .playlist h2 {
