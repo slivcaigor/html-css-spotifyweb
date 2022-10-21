@@ -68,11 +68,11 @@ li {
   }
 
   70% {
-    transform: translateY(calc(200vh - 130px)) scale(1);
+    transform: translateY(calc(170vh - 130px)) scale(1);
   }
 
   100% {
-    transform: translateY(calc(200vh - 130px)) scale(0);
+    transform: translateY(calc(170vh - 130px)) scale(0);
   }
 }
 
