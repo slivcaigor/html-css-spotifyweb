@@ -37,6 +37,46 @@ body {
   float: left;
 }
 
+li {
+  list-style-type: none;
+}
+
+/*************************************************
+    AUTUMN ANIMATION STYLES
+ *************************************************/
+.leafs {
+  padding: 0px 20px;
+}
+
+.leafs img {
+  width: 30px;
+}
+
+.leafs span {
+  z-index: 777;
+  bottom: 25px;
+  width: 100%;
+  font-size: clamp(15px 25px 30px);
+  animation: animate 20s linear infinite;
+  animation-duration: calc(70s / var(--l));
+  transform-origin: bottom;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  70% {
+    transform: translateY(calc(100vh - 130px)) scale(1);
+  }
+
+  100% {
+    transform: translateY(calc(100vh - 130px)) scale(0);
+  }
+}
+
+
 /*************************************************
     TOP BAR PREMIUM UPGRADE STYLES
  *************************************************/
@@ -591,6 +631,10 @@ body {
 @media all and (max-width: 1200px) {
   .cards {
     flex: 0 1 14.1em;
+  }
+
+  .leafs {
+    display: none;
   }
 }
 
