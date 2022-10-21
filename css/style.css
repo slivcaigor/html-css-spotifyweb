@@ -576,6 +576,12 @@ body {
 /*************************************************
     RESPONSIVE
  *************************************************/
+@media all and (max-height: 205px) {
+  .top-bar {
+    display: none;
+  }
+}
+
 @media all and (max-width: 1800px) {
   .cards {
     flex: 0 1 15.4em;
