@@ -84,12 +84,10 @@ li {
 
 .leafs span {
   z-index: 777;
-  bottom: 0;
   width: 100%;
   font-size: clamp(15px 25px 30px);
   animation: animate 30s linear infinite;
   animation-duration: calc(90s / var(--l));
-  transform-origin: bottom;
 }
 
 @keyframes animate {
@@ -98,11 +96,11 @@ li {
   }
 
   70% {
-    transform: translateY(170vh) scale(1);
+    transform: translateY(210vh) scale(1);
   }
 
   100% {
-    transform: translateY(170vh) scale(0);
+    transform: translateY(210vh) scale(0);
   }
 }
 
